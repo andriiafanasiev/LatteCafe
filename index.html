@@ -10,6 +10,19 @@
 <body>
     <header class="header">
         <div class="header__container">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">About</a></li>
+                        <li><a class="menu__item" href="#">Menu</a></li>
+                        <li><a class="menu__item" href="#">Info</a></li>
+                        <li><a class="menu__item" href="#">Booking</a></li>
+                </ul>
+              </div>
             <div class="header__nav">
                 <a href="">About</a>
                 <a href="">Menu</a>
@@ -29,16 +42,15 @@
     <main>
         <div class="image">
             <div class="image__container">
-                
             </div>
         </div>
-        <div class="about">
+        <section class="about">
             <div class="about__container">
                 <h5 class="about__title">About Us</h5>
                 <p class="about__description">Tucked away in the corner of Wellington, Latte Cafe is a<br> local neighbourhood cafe and bar. Latte is all about doing<br> what we love, in a city that we love. We keep stocked<br> with local produce and pastries. Bring your family for a<br> bite, or meet your friends for a coffee or warm drink.</p>
             </div>
-        </div>
-        <div class="menu">
+        </section>
+        <section class="menu">
             <div class="menu__container">
                 <div class="menu__content">
                     <h5 class="menu__title">
@@ -57,8 +69,8 @@
                     <img src="/img/menu.png" alt="menu list" srcset="">
                 </div>
             </div>
-        </div>
-        <div class="info">
+        </section>
+        <section class="info">
             <div class="info__container">
                 <div class="info__location">
                     <h5 class="info__title">Location</h5>
@@ -82,7 +94,7 @@
                     <p class="info__description">We are closed on Mondays<br> to reflect and refuel</p>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <script src="js/script.js"></script>
 </body>
