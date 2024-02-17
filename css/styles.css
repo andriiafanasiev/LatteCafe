@@ -150,17 +150,18 @@ h5{
 
 .gallery__container{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     max-width: 1340px;
+    justify-content: space-between;
     margin: 0 auto;
     padding: 120px 10px ;
 }
 .gallery__container div:first-of-type{
     display: flex;
     flex-direction: column;
-    gap: 37px ;
-
+    gap: 40px;
 }
 
 
@@ -175,6 +176,7 @@ h5{
 }
 #menu__toggle {
     opacity: 0;
+
   }
   
   #menu__toggle:checked ~ .menu__btn > span {
@@ -272,6 +274,14 @@ h5{
     background-color: #d2748794;
   }
 /**/
+@media screen and (max-width: 1298px) {
+    .gallery__container{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 37px;
+        padding: 0px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .hamburger-menu{
