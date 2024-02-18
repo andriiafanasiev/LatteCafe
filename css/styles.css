@@ -3,6 +3,7 @@
 body{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 .header{
     background-color: #4A2B33;
@@ -18,11 +19,19 @@ body{
     padding: 21.5px 10px ;
 }
 .header__nav{
-    font-size: 15px;
+    font-size: 0.938rem;
     display: flex;
     gap: 20px;
     color: #D27487;
 }
+.header__nav a{
+    transition: all 0.3s ease-in-out;
+}
+.header__nav a:hover{
+    transform: scale(1.1);
+    color: #874a56;
+}
+
 .header__icons{
     display: flex;
     gap: 16px;
@@ -64,12 +73,12 @@ body{
     gap: 3px;
 }
 h5{
-    font-size: 17px;
+    font-size: 1.063rem;
     font-family: "Azeret Mono", monospace;
     font-weight: 700;
 }
 .about__description{
-    font-size: 32px;
+    font-size: 2rem;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     line-height: 44.8px;
@@ -99,12 +108,12 @@ h5{
 }
 .menu__description{
     line-height: 44.8px;
-    font-size: 32px;
+    font-size: 2rem;
     margin-top: 17px;
     margin-bottom: 65px;
 }
 .menu__button{
-    font-size: 15px;
+    font-size: 0.938rem;
     color: #6F6F64;
     padding: 17px 0px;
     background-color: transparent;
@@ -164,7 +173,30 @@ h5{
     gap: 40px;
 }
 
+.award{
+    background-color: #4A2B33;
+}
 
+.award__container{
+    color: #D27487;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1340px;
+    padding: 120px 10px ;
+}
+.award__title{
+    font-family: "Azeret Mono", monospace;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62.5px;
+    font-size: 2.938rem;
+    
+}
+.award__description{
+    font-size: 1.125rem;
+    line-height: 27px;
+}
 
 
 
@@ -263,7 +295,7 @@ h5{
   
     color: #333;
   
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
   
     text-decoration: none;
@@ -279,11 +311,18 @@ h5{
         flex-wrap: wrap;
         justify-content: center;
         gap: 37px;
-        padding: 0px;
+    }
+    .gallery__container div:last-child{
+        display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .award__container{
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
     .hamburger-menu{
         display: block;
     }
